@@ -2,8 +2,8 @@
 import postgres from 'postgres'
 
 // see env variables in .env
-import {VITE_PGCONNECT} from '$env/static/private';
+import {PGCONNECT} from '$env/static/private';
 
-const sql = postgres(VITE_PGCONNECT, {} )
+const sql = postgres(PGCONNECT, {} )
 
 export default sql;
